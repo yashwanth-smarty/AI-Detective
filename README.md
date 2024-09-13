@@ -1,6 +1,6 @@
 # AI Detective
 
-AI Detective project is a face recognition system that uses a webcam to identify known faces from a set of pre-saved images. When a known face is detected, the system captures an image of the detected face and sends a notification with the image and details like current location of the camera, image name via Telegram. It can be integrated with CCTV cameras, making it suitable for security and monitoring applications.
+AI Detective is a face recognition system that uses a webcam to identify known faces from a set of pre-saved images. When a known face is detected, the system captures an image of the detected face and sends a notification with the image and details like current location of the camera, image name via Telegram. It can be integrated with CCTV cameras, making it suitable for security and monitoring applications.
 
 ## An illustration demonstrating the working of AI Detective
 ![Project Workflow](https://github.com/yashwanth-smarty/AI-Detective/blob/main/An%20illustration%20demonstrating%20the%20working%20of%20AI%20Detective%20project.jpeg?raw=true)
