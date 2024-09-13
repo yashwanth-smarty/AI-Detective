@@ -1,6 +1,9 @@
 # AI Detective
 
-This project is a face recognition system that uses a webcam to identify known faces from a set of pre-saved images. When a known face is detected, the system saves an image of the detected face and sends a notification with the image and details like current location of the camera, image name via Telegram.
+AI Detective project is a face recognition system that uses a webcam to identify known faces from a set of pre-saved images. When a known face is detected, the system captures an image of the detected face and sends a notification with the image and details like current location of the camera, image name via Telegram. It can be integrated with CCTV cameras, making it suitable for security and monitoring applications.
+
+## An illustration demonstrating the working of AI Detective
+![Project Workflow](https://github.com/yashwanth-smarty/AI-Detective/blob/main/An%20illustration%20demonstrating%20the%20working%20of%20AI%20Detective%20project.jpeg?raw=true)
 
 ## Features
 
@@ -68,6 +71,27 @@ This project is a face recognition system that uses a webcam to identify known f
 - Ensure that your webcam is connected and functioning properly.
 - Verify that the Telegram bot token and chat ID are correct and properly set in the `.env` file.
 - If you encounter issues with face recognition, check the images in the `images` directory and ensure they are clear and properly formatted.
+
+## Future Improvements
+
+### Integration with CCTV Cameras
+
+This face recognition system can be enhanced to work with CCTV cameras for real-time surveillance applications. Instead of using a standard webcam, the project can be integrated with CCTV cameras, including IP cameras and USB-connected CCTV cameras, by modifying the video capture source.
+
+To integrate with CCTV cameras:
+
+1. **Identify the Camera Stream URL**:
+   - **IP Cameras**: Use the RTSP URL format, typically structured as:
+     ```
+     rtsp://username:password@ip_address:port/stream_path
+     ```
+   - **USB CCTV Cameras**: Use the appropriate device ID (e.g., `cv2.VideoCapture(1)`).
+
+2. **Modify the Video Capture**:
+   Replace the default webcam capture line in `app.py`:
+   
+   ```python
+   cap = cv2.VideoCapture(0)
 
 ## Acknowledgments
 
